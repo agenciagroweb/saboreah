@@ -49,7 +49,6 @@ app.controller('header.controller', [
                 var subtotal  = 0;
 
                 _.each(p.products, function(data) {
-                    console.log(data);
 
                     var pval = 0;
 
