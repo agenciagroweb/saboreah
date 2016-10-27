@@ -1,19 +1,19 @@
 {
-  "name": "blyp",
-  "description": "Blyp main project.",
-  "homepage": "http://www.blyp.com.br",
+  "name": "saboreah",
+  "description": "SaboreAh Loja",
+  "homepage": "http://www.saboreah.com.br/loja",
   "author": {
     "name": "Leonardo Moreira",
-    "email": "eu@leonardomoreira.com.br"
+    "email": "dev@groweb.com.br"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/blyp/blyp.git"
+    "url": "git://github.com/agenciagroweb/saboreah.git"
   },
   "version": "0.0.7",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/blyp/blyp/issues"
+    "url": "https://github.com/agenciagroweb/saboreah/issues"
   },
   "devDependencies": {
     "bower": "^1.7.7",
