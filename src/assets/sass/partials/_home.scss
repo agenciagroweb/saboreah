@@ -1,0 +1,165 @@
+//Home
+#home {
+
+  #owl-banner {
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .row.select-box {
+    padding: 20px;
+    background: $winne;
+    color: $white;
+    font-family: 'Varela Round', sans-serif;
+    height: 245px;
+
+    header {
+      text-align: center;
+      margin: 20px 20px 60px 20px;
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+
+    .size {
+      text-align: center;
+
+      span {
+        font-size: 48px;
+        font-weight: 700;
+        background: red;
+        padding: 20px 80px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+
+        &:hover, &.selected {
+
+          &:after, &:before {
+            top: 105px;
+            left: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            z-index: 4;
+          }
+
+          &:after {
+            border-color: transparent;
+            border-top-color: red;
+            border-width: 45px;
+            margin-left: -45px;
+          }
+
+          &:before {
+            border-top-color: $winne;
+            border-width: 55px;
+            margin-left: -55px;
+          }
+        }
+      }
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+
+  .select-product header {
+    position: relative;
+    padding: 30px 20px;
+    background: red;
+    color: $white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 26px;
+    text-align: center;
+
+    &:after, &:before {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      content: " ";
+      height: 0;
+      width: 0;
+      z-index: 4;
+      pointer-events: none;
+      border: solid transparent;
+    }
+
+    &:after {
+      border-color: transparent;
+      border-top-color: red;
+      border-width: 35px;
+      margin-left: -35px;
+    }
+
+    &:before {
+      border-top-color: $white;
+      border-width: 45px;
+      margin-left: -45px;
+    }
+  }
+
+  .product-box {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+
+
+    &:nth-child(odd) {
+      background: $clean;
+    }
+
+    .product {
+
+      header {
+        margin: 20px;
+
+        h3 {
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+
+      figure {
+        margin: 20px;
+
+        img {
+
+        }
+      }
+
+      fieldset {
+        margin: 20px;
+
+        label {
+          font-family: 'Varela Round', sans-serif;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .action-box {
+    padding: 20px;
+    background: $winne;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    color: $white;
+
+    .btn-submit {
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

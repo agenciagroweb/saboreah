@@ -1,0 +1,46 @@
+//Footer
+footer.main {
+  background: $gold;
+  padding: 40px 0;
+
+  .col {
+
+    h4 {
+      font-family: 'Varela Round', sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      @media (max-width: $screen-sm) {
+        margin-top: 20px;
+      }
+    }
+
+    ul {
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .pagseguro {
+    text-align: center;
+    margin-top: 40px;
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  p {
+    font-size: $font-default;
+  }
+
+  .copy {
+    text-align: center;
+    fon-size: $font-small;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,63 @@
+<header class="main">
+    <nav class="navbar">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <i class="material-icons action hidden-md hidden-lg">menu</i>
+                </button>
+
+                <a class="navbar-brand" href="/loja/"><i class="logo-navbar center-block"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/loja/comprar">Comprar</a></li>
+                    <li><a href="/loja/como-comprar">Como Comprar</a></li>
+                    <li><a href="/loja/localizacao">Localização</a></li>
+                    <li><a href="/loja/contato">Contato</a></li>
+                    <li class="cart" ng-click="(cart.status) ? cart.close() : cart.open();">
+                        <i class="material-icons">shopping_cart</i> R$ {{cart.invoice.total}}
+
+                        <div class="cart-controller" ng-show="cart.status">
+                            <header ng-show="cart.invoice.items.length !== 0">
+                                <h2>Itens no Carrinho: <span><i>{{cart.invoice.items.length}}</i></span></h2>
+                            </header>
+
+                            <ul ng-show="cart.invoice.items.length !== 0" ng-repeat="item in cart.invoice.items">
+                                <header>
+                                    <h3>Item #{{$index+1}} <span><i>{{item.size}} kg</i></span></h3>
+                                </header>
+
+                                <li ng-show="item.products[0].amount !== 0">Bolinho de Bacalhau <span><i>{{item.products[0].amount}} kg</i> R$ {{item.products[0].value}}</span></li>
+                                <li ng-show="item.products[1].amount !== 0">Bolinho de Camarão <span><i>{{item.products[1].amount}} kg</i> R$ {{item.products[1].value}}</span></li>
+                                <li ng-show="item.products[2].amount !== 0">Bolinho de Provolone <span><i>{{item.products[2].amount}} kg</i> R$ {{item.products[2].value}}</span></li>
+                                <li ng-show="item.products[3].amount !== 0">Bolinho de 4 <span><i>{{item.products[3].amount}} kg</i> R$ {{item.products[3].value}}</span></li>
+                                <li ng-show="item.products[4].amount !== 0">Bolinho de 5 <span><i>{{item.products[4].amount}} kg</i> R$ {{item.products[4].value}}</span></li>
+                                <li ng-show="item.products[5].amount !== 0">Bolinho de 6 <span><i>{{item.products[5].amount}} kg</i> R$ {{item.products[5].value}}</span></li>
+
+                                <footer>
+                                    <p>Subtotal: <span>R$ {{item.total}}</span></p>
+                                </footer>
+                            </ul>
+
+                            <div class="cart-empty" ng-show="cart.invoice.items.length === 0">
+                                <p>Seu carrinho está vazio. <i class="material-icons">sentiment_dissatisfied</i></p>
+                            </div>
+
+                            <div class="cart-footer" ng-show="cart.invoice.items.length !== 0">
+                                <span class="total">R$ {{cart.invoice.total}}</span>
+
+                                <div class="action">
+                                    <a ng-href class="btn btn-reset" ng-click="cart.reset()">Limpar</a>
+                                    <a ng-href class="btn btn-submit" ng-click="cart.submit()">Comprar <i class="material-icons">chevron_right</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>

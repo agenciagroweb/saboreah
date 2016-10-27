@@ -1,0 +1,33 @@
+{
+  "name": "Saboreah",
+  "description": "Saboreah websie.",
+  "main": "",
+  "authors": [
+    {
+      "name": "Leonardo Moreira",
+      "email": "dev@groweb.com.br"
+    }
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/core",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^2.1.3",
+    "angular-route": "^1.5.8",
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "angular-popeye": "^1.0.5",
+    "angular-ui-mask": "^1.8.7",
+    "angular-sanitize": "^1.5.8"
+  }
+}

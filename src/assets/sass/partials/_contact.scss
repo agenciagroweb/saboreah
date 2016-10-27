@@ -1,0 +1,43 @@
+//Contact
+div#contato {
+
+  .container {
+
+    header {
+      margin-bottom: 5px;
+
+      h1 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        @media (max-width: $screen-sm) {
+          font-size: 36px;
+        }
+      }
+
+      h2 {
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: 400;
+
+        @media (max-width: $screen-sm) {
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+    }
+
+    form {
+      margin-top: 40px;
+
+      textarea {
+        height: 170px;
+        max-height: 170px;
+      }
+    }
+
+  }
+
+}

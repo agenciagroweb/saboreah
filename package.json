@@ -1,0 +1,36 @@
+{
+  "name": "blyp",
+  "description": "Blyp main project.",
+  "homepage": "http://www.blyp.com.br",
+  "author": {
+    "name": "Leonardo Moreira",
+    "email": "eu@leonardomoreira.com.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blyp/blyp.git"
+  },
+  "version": "0.0.7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blyp/blyp/issues"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "grunt": "^0.4.5",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-bump": "0.0.16",
+    "grunt-cache-bust": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-version": "^0.3.1",
+    "jshint-stylish": "^1.0.0"
+  },
+  "environment": "test",
+  "readme": "ERROR: No README data found!"
+}

@@ -1,0 +1,227 @@
+<div id="home" page="home">
+
+    <div class="owl-carousel owl-theme">
+        <div id="owl-banner">
+            <div class="item" ng-repeat="banner in banners">
+                <img src="{{banner.url}}" alt="{{banner.tittle}}" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container wrapping">
+        <div class="row select-box">
+            <header>
+                <h2>Escolha sua caixa:</h2>
+            </header>
+
+            <div class="row">
+                <div class="size col-md-4">
+                    <span ng-click="cart.box(3)" class="box-3">3 Kg</span>
+                </div>
+
+                <div class="size col-md-4">
+                    <span ng-click="cart.box(5)" class="box-5">5 Kg</span>
+                </div>
+
+                <div class="size col-md-4">
+                    <span ng-click="cart.box(10)" class="box-10">10 Kg</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row select-product ng-hide">
+            <header>
+                <h2>Selecione os bolinhos desejados:</h2>
+            </header>
+        </div>
+
+        <div class="row list-product ng-hide">
+            <form class="product-box default col-md-4">
+                <div class="product">
+                    <header>
+                        <h3>Bolinho de Bacalhau</h3>
+                    </header>
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/product-1.jpg" alt="" />
+                    </figure>
+
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][0]" ng-model="cart.product[0].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][0]" ng-model="cart.product[0].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+            <form class="product-box default col-md-4">
+                <div class="product">
+                    <header>
+                        <h3>Bolinho de Camarão</h3>
+                    </header>
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/product-2.jpg" alt="" />
+                    </figure>
+
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][1]" ng-model="cart.product[1].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][1]" ng-model="cart.product[1].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+            <form class="product-box default col-md-4">
+                <div class="product">
+                    <header>
+                        <h3>Bolinho de Provolone</h3>
+                    </header>
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/product-3.jpg" alt="" />
+                    </figure>
+
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][2]" ng-model="cart.product[2].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][2]" ng-model="cart.product[2].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+            <form class="product-box default col-md-4">
+                <div class="product">
+                    <header>
+                        <h3>Bolinho de 4</h3>
+                    </header>
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/product-3.jpg" alt="" />
+                    </figure>
+
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][3]" ng-model="cart.product[3].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][3]" ng-model="cart.product[3].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+            <form class="product-box default col-md-4">
+                <div class="product">
+                    <header>
+                        <h3>Bolinho de 5</h3>
+                    </header>
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/product-3.jpg" alt="" />
+                    </figure>
+
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][4]" ng-model="cart.product[4].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][4]" ng-model="cart.product[4].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+
+            <form class="product-box default col-md-4">
+                <div class="product">
+                    <header>
+                        <h3>Bolinho de 6</h3>
+                    </header>
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/product-3.jpg" alt="" />
+                    </figure>
+
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][5]" ng-model="cart.product[5].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
+                                <label>
+                                    <input type="radio" id="product_size_{{i}}" name="cart[product][5]" ng-model="cart.product[5].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+
+        <div class="row action-box ng-hide">
+            <button type="button" class="btn btn-reset" ng-click="cart.reset()">Cancelar Pedido</button>
+            <button type="button" class="btn btn-submit" ng-click="cart.submit()">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+</div>
+<!-- /home -->

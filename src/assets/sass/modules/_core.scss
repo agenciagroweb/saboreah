@@ -1,0 +1,57 @@
+@import "_colors";
+@import "_fonts";
+@import "_forms";
+@import "_icons";
+
+// Theme Core
+body {
+  background: $white;
+  color: $black;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+  -webkit-transition: color .2s, background-color .2s;
+  -o-transition: color .2s, background-color .2s;
+  transition: color .2s, background-color .2s;
+
+  &:hover, &:focus, &:active, &:link, &:visited {
+    color: $black;
+    text-decoration: none;
+  }
+
+  &.button {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px 15px;
+    @include border-radius(4px);
+  }
+}
+
+// Extended Core
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.container {
+
+  &.wrapping {
+    padding: 40px 15px;
+  }
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background: transparent;
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
