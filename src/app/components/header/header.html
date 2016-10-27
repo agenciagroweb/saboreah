@@ -21,12 +21,12 @@
 
                         <div class="cart-controller" ng-show="cart.status">
                             <header ng-show="cart.invoice.items.length !== 0">
-                                <h2>Itens no Carrinho: <span><i>{{cart.invoice.items.length}}</i></span></h2>
+                                <h2>Caixas no Carrinho: <span><i>{{cart.invoice.items.length}}</i></span></h2>
                             </header>
 
                             <ul ng-show="cart.invoice.items.length !== 0" ng-repeat="item in cart.invoice.items">
                                 <header>
-                                    <h3>Item #{{$index+1}} <span><i>{{item.size}} kg</i></span></h3>
+                                    <h3>Caixa #{{$index+1}} <span><i>{{item.size}} kg</i></span></h3>
                                 </header>
 
                                 <li ng-show="item.products[0].amount !== 0">Bolinho de Bacalhau <span><i>{{item.products[0].amount}} kg</i> R$ {{item.products[0].value}}</span></li>
