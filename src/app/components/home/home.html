@@ -47,19 +47,18 @@
                     </figure>
 
                     <fieldset>
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][0]" ng-model="cart.product[0].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
-                            </div>
-                        </div>
+                        <div class="range-container">
+                            <header>
+                                <h3>Quantidade selecionada: <span>{{cart.product[0].amount}} kg</span></h3>
+                            </header>
 
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][0]" ng-model="cart.product[0].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
+                            <div class="slider-container">
+                                <!--<div class="range-fill"></div>-->
+                                <input class="slider" type="range" min="0" max="{{cart.size}}" step="1" id="product_size_0" name="cart[product][0]" ng-model="cart.product[0].amount" value="0" ng-change="cart.amount(false)" />
+                            </div>
+
+                            <div class="label-container">
+                                <div class="label" ng-repeat="i in [].constructor(cart.size+1) track by $index" ng-style="{ 'width' : (100/(cart.size+1)) + '%' }">{{$index}} <i>kg</i></div>
                             </div>
                         </div>
                     </fieldset>
@@ -77,19 +76,18 @@
                     </figure>
 
                     <fieldset>
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][1]" ng-model="cart.product[1].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
-                            </div>
-                        </div>
+                        <div class="range-container">
+                            <header>
+                                <h3>Quantidade selecionada: <span>{{cart.product[1].amount}} kg</span></h3>
+                            </header>
 
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][1]" ng-model="cart.product[1].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
+                            <div class="slider-container">
+                                <!--<div class="range-fill"></div>-->
+                                <input class="slider" type="range" min="0" max="{{cart.size}}" step="1" id="product_size_1" name="cart[product][1]" ng-model="cart.product[1].amount" value="0" ng-change="cart.amount(false)" />
+                            </div>
+
+                            <div class="label-container">
+                                <div class="label" ng-repeat="i in [].constructor(cart.size+1) track by $index" ng-style="{ 'width' : (100/(cart.size+1)) + '%' }">{{$index}} <i>kg</i></div>
                             </div>
                         </div>
                     </fieldset>
@@ -107,19 +105,18 @@
                     </figure>
 
                     <fieldset>
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][2]" ng-model="cart.product[2].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
-                            </div>
-                        </div>
+                        <div class="range-container">
+                            <header>
+                                <h3>Quantidade selecionada: <span>{{cart.product[2].amount}} kg</span></h3>
+                            </header>
 
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][2]" ng-model="cart.product[2].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
+                            <div class="slider-container">
+                                <!--<div class="range-fill"></div>-->
+                                <input class="slider" type="range" min="0" max="{{cart.size}}" step="1" id="product_size_2" name="cart[product][2]" ng-model="cart.product[2].amount" value="0" ng-change="cart.amount(false)" />
+                            </div>
+
+                            <div class="label-container">
+                                <div class="label" ng-repeat="i in [].constructor(cart.size+1) track by $index" ng-style="{ 'width' : (100/(cart.size+1)) + '%' }">{{$index}} <i>kg</i></div>
                             </div>
                         </div>
                     </fieldset>
@@ -137,19 +134,18 @@
                     </figure>
 
                     <fieldset>
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][3]" ng-model="cart.product[3].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
-                            </div>
-                        </div>
+                        <div class="range-container">
+                            <header>
+                                <h3>Quantidade selecionada: <span>{{cart.product[3].amount}} kg</span></h3>
+                            </header>
 
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][3]" ng-model="cart.product[3].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
+                            <div class="slider-container">
+                                <!--<div class="range-fill"></div>-->
+                                <input class="slider" type="range" min="0" max="{{cart.size}}" step="1" id="product_size_3" name="cart[product][3]" ng-model="cart.product[3].amount" value="0" ng-change="cart.amount(false)" />
+                            </div>
+
+                            <div class="label-container">
+                                <div class="label" ng-repeat="i in [].constructor(cart.size+1) track by $index" ng-style="{ 'width' : (100/(cart.size+1)) + '%' }">{{$index}} <i>kg</i></div>
                             </div>
                         </div>
                     </fieldset>
@@ -167,19 +163,18 @@
                     </figure>
 
                     <fieldset>
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][4]" ng-model="cart.product[4].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
-                            </div>
-                        </div>
+                        <div class="range-container">
+                            <header>
+                                <h3>Quantidade selecionada: <span>{{cart.product[4].amount}} kg</span></h3>
+                            </header>
 
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][4]" ng-model="cart.product[4].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
+                            <div class="slider-container">
+                                <!--<div class="range-fill"></div>-->
+                                <input class="slider" type="range" min="0" max="{{cart.size}}" step="1" id="product_size_4" name="cart[product][4]" ng-model="cart.product[4].amount" value="0" ng-change="cart.amount(false)" />
+                            </div>
+
+                            <div class="label-container">
+                                <div class="label" ng-repeat="i in [].constructor(cart.size+1) track by $index" ng-style="{ 'width' : (100/(cart.size+1)) + '%' }">{{$index}} <i>kg</i></div>
                             </div>
                         </div>
                     </fieldset>
@@ -197,19 +192,18 @@
                     </figure>
 
                     <fieldset>
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [1,2,3,4,5]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][5]" ng-model="cart.product[5].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
-                            </div>
-                        </div>
+                        <div class="range-container">
+                            <header>
+                                <h3>Quantidade selecionada: <span>{{cart.product[5].amount}} kg</span></h3>
+                            </header>
 
-                        <div class="col-md-6">
-                            <div class="radio" ng-repeat="i in [6,7,8,9,10]">
-                                <label>
-                                    <input type="radio" id="product_size_{{i}}" name="cart[product][5]" ng-model="cart.product[5].amount" ng-click="cart.amount(false)" value="{{i}}" > {{i}} kg
-                                </label>
+                            <div class="slider-container">
+                                <!--<div class="range-fill"></div>-->
+                                <input class="slider" type="range" min="0" max="{{cart.size}}" step="1" id="product_size_5" name="cart[product][5]" ng-model="cart.product[5].amount" value="0" ng-change="cart.amount(false)" />
+                            </div>
+
+                            <div class="label-container">
+                                <div class="label" ng-repeat="i in [].constructor(cart.size+1) track by $index" ng-style="{ 'width' : (100/(cart.size+1)) + '%' }">{{$index}} <i>kg</i></div>
                             </div>
                         </div>
                     </fieldset>
